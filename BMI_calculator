@@ -1,21 +1,25 @@
-#BMI CALCULATOR
-#BMI is body mass index
+def BMIcalculator():
+
+    #BMI CALCULATOR
+    #BMI is body mass index
 
 
-WeightKg = float(input("\nPlease enter your weight in kilogram:"))
-HeightCm = float(input("\nPlease enter your height in centimetres:"))
+    WeightKg = float(input("\nPlease enter your weight in kilogram:"))
+    HeightCm = float(input("\nPlease enter your height in centimetres:"))
 
-BMI= WeightKg/(HeightCm/100)**2
+    BMI= WeightKg/(HeightCm/100)**2
 
-if BMI<18.4:
-    print("Malnutrition risk")
-elif BMI>=18.5 and BMI<24.9:
-    print("Low risk")
-elif BMI>=25 and BMI<29.9:
-    print("Enhanced risk")
-elif BMI>=30 and BMI<34.9:
-    print("Medium risk")
-elif BMI>=35 and BMI<39.9:
-    print("High risk")
-else:
-    print("Very high risk")
+    if BMI<18.4:
+        print("Malnutrition risk")
+    elif BMI>=18.5 and BMI<24.9:
+        print("Low risk")
+    elif BMI>=25 and BMI<29.9:
+        print("Enhanced risk")
+    elif BMI>=30 and BMI<34.9:
+        print("Medium risk")
+    elif BMI>=35 and BMI<39.9:
+        print("High risk")
+    else:
+        print("Very high risk")
+
+BMIcalculator()
